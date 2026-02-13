@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: manjubro
+spec:
+  containers:
+    - image: kumar49/pavan-private:taskimage
+      name: cont1
+      ports:
+        - containerPort: 80
+  serviceAccountName: mysa
+
